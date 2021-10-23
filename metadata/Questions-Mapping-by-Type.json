@@ -1,0 +1,28 @@
+{
+  "leadershipQuestions": [
+    "Q1",
+    "Q5",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q27",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q36",
+    "Q40"
+  ],
+  "grandioseQuestions": [
+    "Q4",
+    "Q7",
+    "Q15",
+    "Q19",
+    "Q20",
+    "Q26",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q38"
+  ],
+  "entitlementQuestions": ["Q13", "Q14", "Q24", "Q25"]
+}

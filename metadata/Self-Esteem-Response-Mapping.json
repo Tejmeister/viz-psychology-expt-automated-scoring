@@ -1,0 +1,14 @@
+{
+  "upMapping": {
+    "strongly agree": 1,
+    "agree": 2,
+    "disagree": 3,
+    "strongly disagree": 4
+  },
+  "downMapping": {
+    "strongly agree": 4,
+    "agree": 3,
+    "disagree": 2,
+    "strongly disagree": 1
+  }
+}
