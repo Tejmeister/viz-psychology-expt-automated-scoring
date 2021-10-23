@@ -33,27 +33,39 @@ finalResponsesExcelFile = "C:/Users/tejparma/Personal/Projects/viz-psychology-ex
 
 # Self Esteem response mapping
 se_response_mapping = fn_read_json("./metadata/Self-Esteem-Response-Mapping.json")
-
-
 # upMapping = {"strongly agree": 1, "agree": 2, "disagree": 3, "strongly disagree": 4}
 # downMapping = {"strongly agree": 4, "agree": 3, "disagree": 2, "strongly disagree": 1}
+
+upMapping = se_response_mapping['upMapping']
+downMapping = se_response_mapping['downMapping']
 
 # Self Esteem questions to response mapping
 # upQuestions = ["Q1","Q3","Q4","Q7","Q10"]
 # downQuestions = ["Q2","Q5","Q6","Q8","Q9"]
-
 se_q_r_mapping = fn_read_json("./metadata/Self-Esteem-Question-to-Response-Mapping.json")
+upQuestions = se_q_r_mapping['upQuestions']
+downQuestions = se_q_r_mapping['downQuestions']
 
-questions = fn_read_json("./metadata/Questions-List.json")
+
+questions = fn_read_json("./metadata/Questions-List.json")['questions']
 
 # rAMapping = ['Q1', 'Q2', 'Q3', 'Q6', 'Q8', 'Q11', 'Q12', 'Q13', 'Q14', 'Q16', 'Q21', 'Q24', 'Q25', 'Q27', 'Q29', 'Q30', 'Q31', 'Q33', 'Q34', 'Q36', 'Q37', 'Q38', 'Q39']
 # rBMapping = ['Q4', 'Q5', 'Q7', 'Q9', 'Q10', 'Q15', 'Q17', 'Q18', 'Q19', 'Q20', 'Q22', 'Q23', 'Q26', 'Q28', 'Q32', 'Q35', 'Q40']
 
-questions_mapping 
+questions_mapping = fn_read_json("./metadata/Questions-Mapping.json")
+rAMapping = questions_mapping['rAMapping']
+rBMapping = questions_mapping['rBMapping']
 
-leadershipQuestions = ["Q1", "Q5", "Q10", "Q11", "Q12", "Q27", "Q32", "Q33", "Q34", "Q36", "Q40"]
-grandioseQuestions = ["Q4", "Q7", "Q15", "Q19", "Q20", "Q26", "Q28", "Q29", "Q30", "Q38"]
-entitlementQuestions = ["Q13", "Q14", "Q24", "Q25"]
+
+# leadershipQuestions = ["Q1", "Q5", "Q10", "Q11", "Q12", "Q27", "Q32", "Q33", "Q34", "Q36", "Q40"]
+# grandioseQuestions = ["Q4", "Q7", "Q15", "Q19", "Q20", "Q26", "Q28", "Q29", "Q30", "Q38"]
+# entitlementQuestions = ["Q13", "Q14", "Q24", "Q25"]
+
+questions_type_mapping = fn_read_json("./metadata/Questions-Mapping-by-Type.json")
+
+leadershipQuestions = questions_type_mapping['leadershipQuestions']
+grandioseQuestions = questions_type_mapping['grandioseQuestions']
+entitlementQuestions = questions_type_mapping['entitlementQuestions']
 
 # In[4]:
 
